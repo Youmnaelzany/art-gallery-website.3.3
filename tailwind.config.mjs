@@ -9,6 +9,10 @@ module.exports = {
   ],
   prefix: "",
   theme: {
+    fontFamily: {
+      'Big-Shoulders': ["Big Shoulders Display", "sans-serif"],
+      'Outfit': ["Outfity", "sans-serif"],
+    },
     screens: {
       sm: "375px",
       md: "768px",

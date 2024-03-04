@@ -1,69 +1,152 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import '@/styles/globals.css'
-
+import Layout from "../layouts/Layout.astro";
+import "@/styles/globals.css";
 ---
 
 <Layout title="Frontend Mentor | Art gallery website">
-	<main>
-		
-	</main>
+  <main>
+    <!-- Hero Section -->
+    <section
+      class="relative mb-[7.5rem] flex flex-col md:flex-row lg:mb-[11.25rem]"
+    >
+      <div
+        class="z-50 hidden h-[49.9375rem] w-[28.125rem] overflow-hidden bg-[#151515] lg:block"
+      >
+        <h2
+          class="hidden uppercase lg:ml-[10.31rem] lg:mt-[11.81rem] lg:block lg:w-[32.125rem] lg:font-Big-Shoulders lg:text-8xl lg:font-black lg:leading-[5.5rem] lg:text-[#fff]"
+        >
+          Modern Art Gallery
+        </h2>
+      </div>
+      <picture>
+        <source
+          media="(min-width:1024px)"
+          srcset="/assets/desktop/image-hero.jpg"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="/assets/tablet/image-hero.jpg"
+        />
+        <img src="/assets/mobile/image-hero.jpg" alt="" class="" />
+      </picture>
+      <!-- Hero Text Wrapper -->
+      <div
+        class="relative mx-4 mt-8 flex flex-col gap-8 md:right-12 md:mt-[9.06rem] md:gap-12 md:max-xl:absolute lg:right-[6rem] lg:mt-[10.88rem] lg:flex-row"
+      >
+        <!-- Page Title -->
+        <div class="">
+          <h1
+            class="w-[21.4375rem] font-Big-Shoulders text-[3.75rem] font-black uppercase leading-[3.4375rem] text-[#151515] md:text-[4.375rem] md:leading-[4.0625rem] lg:absolute lg:right-[36.7rem] lg:mt-[0.9rem] lg:w-[32.125rem] lg:text-8xl lg:leading-[5.5rem]"
+          >
+            Modern Art Gallery
+          </h1>
+        </div>
+        <!-- Page Detailes  -->
+        <div
+          class="flex flex-col gap-8 md:gap-12 lg:flex lg:flex-col lg:gap-12"
+        >
+          <div class="">
+            <p
+              class="w-[21.4375rem] font-Outfit text-lg font-normal leading-7 text-[#444] lg:text-[1.375rem] lg:leading-8"
+            >
+              The arts in the collection of the Modern Art Gallery all started
+              from a spark of inspiration. Will these pieces inspire you? Visit
+              us and find out.
+            </p>
+          </div>
+          <!-- Location Link -->
+          <div class="flex">
+            <a
+              href="/location"
+              class="flex h-[4.5rem] w-[12.75rem] items-center justify-center bg-[#151515] font-Big-Shoulders text-xl font-extrabold leading-normal tracking-[0.22725rem] text-[#fff]"
+            >
+              Our location
+            </a>
+            <div
+              class="flex h-[4.5rem] w-14 items-center justify-center bg-[#D5966C]"
+            >
+              <a href="/location" class=""
+                ><img src="/assets/icon-arrow-right.svg" alt="" class="" /></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Your Day -->
+    <section
+      class="mx-4 mb-8 flex flex-col gap-[1.56rem] md:mx-10 md:mb-[0.69rem] md:flex-row-reverse md:gap-[4.25rem] md:max-xl:items-center md:max-xl:justify-between lg:mx-[10.31rem] lg:mb-[1.87rem] lg:gap-[7.81rem]"
+    >
+      <picture>
+        <source
+          media="(min-width:1024px)"
+          srcset="/assets/desktop/image-grid-1.jpg"
+        />
+        <source
+          media="(min-width:768px)"
+          srcset="/assets/tablet/image-grid-1.jpg"
+        />
+        <img src="/assets/mobile/image-grid-1.jpg" alt="" class="" />
+      </picture>
+      <div
+        class="flex w-[21.4375rem] flex-col gap-[1.31rem] md:w-[13.9375rem] md:gap-6 lg:w-[21.875rem] lg:gap-8"
+      >
+        <h2
+          class="font-Big-Shoulders text-[3.125rem] font-black uppercase leading-[2.8125rem] text-[#151515] lg:text-[3.75rem] lg:leading-[3.75rem]"
+        >
+          Your day at the gallery
+        </h2>
+        <p class="font-Outfit text-lg font-normal leading-7 text-[#444]">
+          Wander through our distinct collections and find new insights about
+          our artists. Dive into the details of their creative process.
+        </p>
+      </div>
+    </section>
+    <!-- Gallery -->
+    <section
+      class="mx-4 mb-[7.5rem] flex flex-col gap-4 md:mx-10 md:mb-[7.5rem] md:max-xl:flex-row lg:mx-[10.31rem] lg:mb-[11.25rem] lg:gap-[1.87rem]"
+    >
+      <div class="">
+        <picture>
+          <source
+            media="(min-width:1024px)"
+            srcset="/assets/desktop/image-grid-2.jpg"
+          />
+          <source
+            media="(min-width:768px )"
+            srcset="/assets/tablet/image-grid-2.jpg"
+          />
+          <img src="/assets/mobile/image-grid-2.jpg" alt="" class="h-full" />
+        </picture>
+      </div>
+      <div class="flex flex-col gap-4 md:gap-[0.69rem] lg:gap-[1.87rem]">
+        <picture>
+          <source
+            media="(min-width:1024px)"
+            srcset="/assets/desktop/image-grid-3.jpg"
+          />
+          <source
+            media="(min-width:768px )"
+            srcset="/assets/tablet/image-grid-3.jpg"
+          />
+          <img src="/assets/mobile/image-grid-3.jpg" alt="" class="" />
+        </picture>
+        <div
+          class="flex h-[18.31rem] w-[21.44rem] flex-col gap-6 bg-[#151515] px-6 pb-[2.94rem] pt-12 text-[#fff] md:h-[24.75rem] md:w-[17.5rem] md:px-10 md:py-[5.31rem] lg:h-[23.5625rem] lg:w-[27.8125rem] lg:px-12 lg:pb-16 lg:pt-[4.06rem]"
+        >
+          <h2
+            class="w-[18.4375rem] font-Big-Shoulders text-[3.125rem] font-bold uppercase leading-[2.8125rem] md:w-[13.9375rem] lg:w-[21.875rem] lg:text-[3.75rem] lg:leading-[3.75rem]"
+          >
+            COME & BE INSPIRED
+          </h2>
+          <p
+            class="font-Outfit text-lg font-normal leading-7 lg:w-[21.875rem] lg:text-[1.375rem] lg:leading-8"
+          >
+            We&#39; re excited to welcome you to our gallery and see how our
+            collections influence you.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
 </Layout>
-
-
-<style>
-	*,
-*::after,
-*::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font: inherit;
-}
-
-html {
-    hanging-punctuation: first last;
-}
-
-body {
-  min-height: 100svh;
-}
-
-img,
-picture,
-svg,
-video {
-    font-style: italic;
-    background-repeat: no-repeat;
-    background-size: cover;
-    shape-margin: 1rem;
-    max-width: 100%;
-    height: auto;
-    vertical-align: middle;
-}
-
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    text-wrap: balance;
-}
-
-
-/* 75ch not higher than that */
-p {
-    max-width: 75ch;
-    text-wrap: pretty;
-}
-
-
-@media (prefers-reduced-motion: no-preference) {
-    :has(:target) {
-        scroll-behavior: smooth;
-        scroll-padding-top: 3rem;
-    }
-}
-</style>

@@ -17,21 +17,21 @@ import "@/styles/globals.css";
         />
         <img src="/public/assets/mobile/image-map.png" alt="" class="" />
       </picture>
-      <div class="absolute left-0 top-0 flex md:left-14 lg:left-[9.75rem]">
-        <div
-          class="flex h-[4.5rem] w-14 cursor-pointer items-center justify-center bg-[#D5966C] transition-all duration-500 ease-linear hover:bg-[#151515]"
-        >
-          <a href="/index" class=""
-            ><img src="/assets/icon-arrow-left.svg" alt="" class="" /></a
-          >
-        </div>
-
+      <div
+        class="wrapper absolute left-0 top-0 flex cursor-pointer transition-all duration-500 ease-linear md:left-14 lg:left-[9.75rem]"
+      >
         <a
-          href=""
-          class="flex h-[4.5rem] w-[12.75rem] cursor-pointer items-center justify-center bg-[#151515] font-Big-Shoulders text-xl font-extrabold leading-normal tracking-[0.22725rem] text-[#fff] transition-all duration-500 ease-linear hover:bg-[#D5966C]"
+          href="/"
+          class="flex h-[4.5rem] w-[3.5rem] items-center justify-center bg-[#D5966C]"
         >
-          Back to Home
+          <img src="/public/assets/icon-arrow-left.svg" alt="" />
         </a>
+
+        <h2
+          class="flex h-[4.5rem] w-[12.75rem] items-center justify-center bg-[#151515] font-Big-Shoulders text-xl font-extrabold leading-normal tracking-[0.22725rem] text-[#fff]"
+        >
+          BACK TO HOME
+        </h2>
       </div>
     </section>
 
@@ -109,3 +109,12 @@ import "@/styles/globals.css";
     </div>
   </div>
 </footer>
+
+<style>
+  .wrapper:hover h2 {
+    background-color: #d5966c;
+  }
+  .wrapper:hover a {
+    background-color: #151515;
+  }
+</style>

@@ -31,7 +31,7 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/Youmnaelzany/art-gallery-website.3.3.git)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Add live site URL here](https://art-gallery-website33.netlify.app/)
 
 ## My process
 
